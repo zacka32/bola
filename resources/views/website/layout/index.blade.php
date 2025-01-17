@@ -12,11 +12,12 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css"
         href="//fonts.googleapis.com/css?family=Kanit:300,400,500,500i,600,900%7CRoboto:400,900">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        
+   <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/fonts.css')}}"> 
+      <link rel="stylesheet" href="{{asset('css/style.css')}}">
     
+
     <style>
     .ie-panel {
         display: none;
@@ -84,8 +85,9 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+<!--   
+    <script src="{{asset('js/core.min.js')}}"></script>
+    <script src="{{asset('js/script.js')}"></script> -->
 </body>
 
 </html>
