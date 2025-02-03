@@ -23,3 +23,8 @@ Route::get('/', [Controller::class,'index'])->name('home');
 // Route::get('/visimisi', [Controller::class,'visimisi'])->name('visimisi');
 // Route::get('/profile', [Controller::class,'profile'])->name('profile');
 // Route::get('/kontak', [Controller::class,'kontak'])->name('kontak');
+
+//masuk ke admin
+Route::middleware(['guest'])->group(function(){
+    Route::get('/login', [LoginController::class,'index'])->name('login');
+});
